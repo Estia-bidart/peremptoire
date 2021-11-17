@@ -1,0 +1,10 @@
+<nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" [routerLink]="['/accueil']">Cocktails</a>
+    <p style="color: white">{{ nom | titlecase }} {{ prenom }} {{exp | date: 'd/M/yy, HH:mm'}}</p>
+    <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+        <!-- <a class="nav-link" href='#' (click)="logout($event)" >Sign out</a> -->
+        <button class="btn btn-danger" (click)="logout()" >Sign out</button>
+      </li>
+    </ul>
+</nav>
